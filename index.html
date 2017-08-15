@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>simple crystal game</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+ <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+<!-- random number between 1 and 100 is generated at reset
+	4 crystals all holding a random number when the game is reset
+	when targetNumber === crystals additions you win. 
+	when it is over, you loose
+
+	 -->
+
+	
+
+  <h1>Number to Guess: <span id="number-to-guess"></span></h1>
+
+  <!-- Note that this div is now empty. We will fill it dynamically -->
+  <div class="container">
+  		
+		<div id="crystals">
+			<img src="assets/images/crystal1.jpg">
+			<img src="assets/images/crystal2.jpg">
+			<img src="assets/images/crystal3.jpg">
+			<img src="assets/images/crystal4.jpg">
+
+		</div>
+
+  </div>
+
+	<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="assets/javascript/game.js"></script>
+  
+</body>
+</html>

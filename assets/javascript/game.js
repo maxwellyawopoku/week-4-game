@@ -5,43 +5,29 @@ $(document).ready(function() {
   var losses = 0;
   var counter = 0;
 
+    startGame()
 
   var targetNumber = (Math.floor(Math.random() * 100));
-    // We begin by expanding our array to include four options.
-  var crys1 =0
-  var crys2 = 0;
-  var crys3 = 0;
-  var crys4 = 0;
 
    $("#number-to-guess").text(targetNumber);
-
-  startGame()
-
-  var images = ['assets/images/crystal1.jpg', 'assets/images/crystal2.jpg', 'assets/images/crystal3.jpg', 'assets/images/crystal4.jpg'];
-
-  function startGame(){
-  counter = 0;
-
-  targetNumber = (Math.floor(Math.random() * 100));
     // We begin by expanding our array to include four options.
-  crys1 = (Math.floor(Math.random() * 10) +1);
-  crys2 = (Math.floor(Math.random() * 10) +1);
-  crys3 = (Math.floor(Math.random() * 10) +1);
-  crys4 = (Math.floor(Math.random() * 10) +1);
 
-   $("#count").html(counter);
-
-   $("#number-to-guess").text(targetNumber);
-
-  }
-
-  // Now for the hard part. Creating multiple crystals each with their own unique number value.
+  var crys1 = (Math.floor(Math.random() * 10) +1);
+  var crys2 = (Math.floor(Math.random() * 10) +1);
+  var crys3 = (Math.floor(Math.random() * 10) +1);
+  var crys4 = (Math.floor(Math.random() * 10) +1);
 
   
 
 
 
-  var numberOptions = [crys1, crys2, crys3, crys4];
+  var images = ['assets/images/crystal1.jpg', 'assets/images/crystal2.jpg', 'assets/images/crystal3.jpg', 'assets/images/crystal4.jpg'];
+
+ 
+
+  //  Creating multiple crystals each with their own unique number value.
+
+    var numberOptions = [crys1, crys2, crys3, crys4];
 
 
   // Next we create a for loop to create crystals for every numberOption.
@@ -104,7 +90,25 @@ $(document).ready(function() {
     }
 
   });
+ function startGame(){
+  counter = 0;
 
+  targetNumber = (Math.floor(Math.random() * 100));
+    // We begin by expanding our array to include four options.
+  crys1 = (Math.floor(Math.random() * 10) +1);
+  crys2 = (Math.floor(Math.random() * 10) +1);
+  crys3 = (Math.floor(Math.random() * 10) +1);
+  crys4 = (Math.floor(Math.random() * 10) +1);
+
+    //  Creating multiple crystals each with their own unique number value.
+
+    numberOptions = [crys1, crys2, crys3, crys4];
+
+   $("#count").html(counter);
+
+   $("#number-to-guess").text(targetNumber);
+
+  };
 
 });
 

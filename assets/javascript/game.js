@@ -104,6 +104,11 @@ $(document).ready(function() {
 
     numberOptions = [crys1, crys2, crys3, crys4];
 
+    $(".crystal-image").each(function(i) {
+      $(this).attr("data-crystalvalue", numberOptions[i] )
+      console.log(i);
+    })
+
    $("#count").html(counter);
 
    $("#number-to-guess").text(targetNumber);

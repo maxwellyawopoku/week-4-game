@@ -7,6 +7,7 @@
 
  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+
 </head>
 <body>
 <!-- random number between 1 and 100 is generated at reset
@@ -15,23 +16,23 @@
 	when it is over, you loose
 
 	 -->
+	<div class="container">
 
-	
-
-  <h1>Number to Guess: <span id="number-to-guess"></span></h1>
+		<h1> The Crystals Collector Game!</h1>
 
   <!-- Note that this div is now empty. We will fill it dynamically -->
-  <div class="container">
-  		
-		<div id="crystals">
-			<img src="assets/images/crystal1.jpg">
-			<img src="assets/images/crystal2.jpg">
-			<img src="assets/images/crystal3.jpg">
-			<img src="assets/images/crystal4.jpg">
+  		<div id="crystals">
+  			 <h2>Number to Guess: <span id="number-to-guess"></span></h2>  	
+  	     <p> New Score: <span id="count"> 0</span></p>
+         <p>Your Wins : <span id="wins">0</span></p>
+         <p>Your Loses : <span id="losses">0</span></p>
+      </div>
+  <!-- Content here -->
+	</div>
+	
 
-		</div>
+ 
 
-  </div>
 
 	<script
   src="http://code.jquery.com/jquery-3.2.1.min.js"

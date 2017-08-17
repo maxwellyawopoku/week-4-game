@@ -1,0 +1,23 @@
+
+ 
+
+    .crystal-image {
+      width: 150px;
+      height: 150px;
+    }
+
+
+    .container{
+    
+    /* The image used */
+    background-image: url("../images/background1.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    }
